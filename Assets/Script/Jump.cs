@@ -12,6 +12,10 @@ public class Jump : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
+            //Vector3.up = (0, 1, 0)
+            Vector3 forceVector = Vector3.up * jumpForce;
+            reggiebody.AddForce(forceVector);
+
             print("Down");
         }
         else if (Input.GetButton("Jump"))
