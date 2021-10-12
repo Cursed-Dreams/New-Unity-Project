@@ -24,7 +24,7 @@ public class ParticleScript : MonoBehaviour
     {
         if (collisionParticle != null) ;
         {
-            Instantiate(collisionParticle, collision.contacts{0}.point, this.transform.rotation);
+            Instantiate(collisionParticle, collision.contacts[0].point, this.transform.rotation);
         }
     
     }
